@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shoohi.github.io/my-web-site/sitemap.xml
