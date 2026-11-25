@@ -62,7 +62,7 @@ function showDestination(focus){
     if(focus)document.getElementById('back').focus({preventScroll:true});
   }else if(focus&&current==='free'){canvas.focus({preventScroll:true});
   }else if(focus){
-    document.querySelector('footer [data-view="home"]').focus({preventScroll:true});
+    document.querySelector('header [data-view="home"]').focus({preventScroll:true});
   }
   document.getElementById('intro').inert=current!=='home';
   document.getElementById('portals').inert=current!=='home';
@@ -138,7 +138,7 @@ document.addEventListener('click',e=>{
 });
 document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();requestView('home');});
 document.getElementById('back').onclick=()=>requestView('home');
-document.getElementById('reset').onclick=()=>requestView('home');
+
 document.getElementById('skip-zoom').onclick=finishFlight;
 addEventListener('keydown',e=>{if(e.key==='Escape')requestView('home');});
 addEventListener('hashchange',()=>navigate(location.hash.slice(1)||'home'));
@@ -245,3 +245,4 @@ document.getElementById('page-prev').onclick=()=>showPage(pageIndex-1);
 document.getElementById('page-next').onclick=()=>showPage(pageIndex+1);
 document.fonts.ready.then(()=>{if(!panel.hidden)fitPanel();});
 updateMotion();navigate(location.hash.slice(1)||'home',false,true);
+

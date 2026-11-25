@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<title>Shahar Lando</title>
+<rect width="64" height="64" rx="14" fill="#111411"/>
+<g fill="none" stroke="#e7b874" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M29 20H20a7 7 0 0 0 0 14h3a7 7 0 0 1 0 14H14"/>
+<path d="M39 20v28h13"/>
+</g>
+<circle cx="52" cy="13" r="3" fill="#e7b874"/>
+</svg>
+

@@ -56,3 +56,34 @@ footer,.free-mode footer,.traveling footer{background:rgba(17,23,17,.98);opacity
 @media(max-width:650px){#intro .intro-identity{font-size:14px;margin-bottom:12px}#intro h1{margin-bottom:16px}}
 
 .cv-link{margin-left:24px}@media(max-width:650px){.cv-link{margin-left:14px}}
+
+/* Research-led landing page; navigation lives in the header, not a bottom bar. */
+nav .motion-toggle{font-size:11px;white-space:nowrap;color:#c3cbb9;border:1px solid #526047;padding:8px}
+#intro .research-summary{max-width:440px;font-size:16px;line-height:1.6;margin-bottom:12px}
+#intro .intro-identity{max-width:440px;color:#eee9dc}
+.research-link{display:block;width:fit-content;font-size:13px;color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+#intro .primary{margin-top:22px}
+#free-controls{bottom:22px}
+#journey{bottom:24px}
+@media(max-width:650px){
+ header{padding-left:5%;padding-right:5%}nav{gap:10px}
+ nav button[data-view=work]:not(.nav-cta){display:block;font-size:12px}
+ nav button[data-view=work] sup{display:none}
+ nav .motion-toggle{font-size:10px;padding:6px}
+ #intro{padding-top:10px}
+ #intro h1{margin:8px 0 12px}
+ #intro .intro-identity{font-size:14px;margin-bottom:8px}
+ #intro .research-summary{font-size:13px;line-height:1.5;max-width:330px;margin-bottom:8px}
+ #intro .primary{margin-top:14px;padding:12px 18px}
+ #free-controls{bottom:14px}
+}
+@media(max-height:650px){
+ #intro{padding-top:8px}
+ #intro .research-summary{font-size:13px;line-height:1.4}
+ #intro h1{font-size:clamp(28px,3.5vw,44px);margin-bottom:10px}
+ #intro .intro-identity{margin-bottom:8px}
+ #intro .primary{margin-top:12px;padding:10px 18px}
+}
+
+
+@media(max-width:650px){header{height:auto;min-height:76px;padding-top:10px;padding-bottom:10px;gap:12px}header nav{flex-wrap:wrap;justify-content:flex-end;gap:8px 12px}nav button[data-view=work]:not(.nav-cta){font-size:0}nav button[data-view=work]:not(.nav-cta)::before{content:"Work";font-size:12px}nav .motion-toggle{padding:5px 6px}}
